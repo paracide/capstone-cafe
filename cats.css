@@ -64,7 +64,7 @@ h2 {
 
 #huabi-page .page-wrapper {
   color: black;
-  background: linear-gradient(to right, #cccdc7, #747072);
+  background: linear-gradient(45deg, #cccdc7, #747072);
 }
 #huabi-page #huabi1 {
   background-image: url("media/cats/huabi1.jpg");
@@ -80,6 +80,46 @@ h2 {
 
 #huabi4:hover ~ #huabi1 {
   background-image: url("media/cats/huabi4.jpg");
+}
+
+#ml-page .page-wrapper {
+  color: white;
+  background: linear-gradient(45deg, #d1c8bb, #534235, #413b38);
+}
+#ml-page #ml1 {
+  background-image: url("media/cats/ml1.jpg");
+}
+
+#ml2:hover ~ #ml1 {
+  background-image: url("media/cats/ml2.jpg");
+}
+
+#ml3:hover ~ #ml1 {
+  background-image: url("media/cats/ml3.jpg");
+}
+
+#ml4:hover ~ #ml1 {
+  background-image: url("media/cats/ml4.jpg");
+}
+
+#pipi-page .page-wrapper {
+  color: white;
+  background: linear-gradient(45deg, #000000, #cccdc7, #000000);
+}
+#pipi-page #pipi1 {
+  background-image: url("media/cats/pipi1.jpg");
+}
+
+#pipi2:hover ~ #pipi1 {
+  background-image: url("media/cats/pipi2.jpg");
+}
+
+#pipi3:hover ~ #pipi1 {
+  background-image: url("media/cats/pipi3.jpg");
+}
+
+#pipi4:hover ~ #pipi1 {
+  background-image: url("media/cats/pipi4.jpg");
 }
 
 @media screen and (max-width: 767px) {
