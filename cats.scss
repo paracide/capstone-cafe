@@ -168,18 +168,27 @@ h2 {
 
   h2 {
     font-size: 3rem;
+    grid-row: 1/2;
+    grid-column: 1/4;
   }
 
   .page-txt {
-    grid-column: 1/4;
+    display: none;
   }
 
   .page-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr 1fr;
   }
 
+
+
   .main-img {
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
+
+  p{
     grid-row: 3/4;
     grid-column: 1/4;
   }
