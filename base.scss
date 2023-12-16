@@ -6,6 +6,7 @@
 /*remove the interruption of default margin in heading*/
 h1, h2, h3, h4, h5 {
   margin: 0;
+  padding: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -46,6 +47,7 @@ header {
   place-items: center;
   width: 100vw;
 }
+
 /*navigation*/
 nav {
   height: 40px;
@@ -164,3 +166,9 @@ footer {
   border-radius: 20px;
 }
 
+.page {
+  padding: 5vw;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
