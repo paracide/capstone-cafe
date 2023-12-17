@@ -24,6 +24,10 @@ h2 {
   border-radius: 20px;
   color: white;
 
+  * {
+    transition: all 0.3s ease-in-out;
+  }
+
 }
 
 .main-img {
@@ -81,12 +85,15 @@ h2 {
 
   #huabi1 {
     background-image: url("media/cats/huabi1.jpg");
+
   }
 }
 
 #huabi2 {
-  &:hover ~ #huabi1 {
-    background-image: url("media/cats/huabi2.jpg");
+  &:hover {
+    ~ #huabi1 {
+      background-image: url("media/cats/huabi2.jpg");
+    }
   }
 }
 
@@ -105,7 +112,7 @@ h2 {
 #ml-page {
   .page-wrapper {
     color: white;
-    background: linear-gradient(45deg,#d1c8bb, #534235, #413b38);
+    background: linear-gradient(45deg, #d1c8bb, #534235, #413b38);
   }
 
   #ml1 {
@@ -134,7 +141,7 @@ h2 {
 #pipi-page {
   .page-wrapper {
     color: white;
-    background: linear-gradient(45deg, #000000,#cccdc7, #000000);
+    background: linear-gradient(45deg, #000000, #cccdc7, #000000);
   }
 
   #pipi1 {
@@ -182,13 +189,12 @@ h2 {
   }
 
 
-
   .main-img {
     grid-row: 2/3;
     grid-column: 1/4;
   }
 
-  p{
+  p {
     grid-row: 3/4;
     grid-column: 1/4;
   }
