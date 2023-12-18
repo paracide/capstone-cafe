@@ -7,13 +7,17 @@
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+ // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*when click the archer, scroll to the center*/
 html {
-  scroll-padding-top: 5vh;
   scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 
 $dark-primary-color: #616161;
@@ -32,7 +36,7 @@ body {
 
 header {
   display: grid;
-  padding: 50px 0 0 0;
+  padding: 5vh 0 0 0;
   place-items: center;
   width: 100vw;
 
@@ -43,9 +47,15 @@ header {
 
 .wrapper {
   display: grid;
-  padding: 50px;
   place-items: center;
   width: 100vw;
+  background-image: url("media/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
 }
 
 /*navigation*/
@@ -105,10 +115,7 @@ main {
   grid-template-columns: 1fr;
 }
 
-.intro {
-  text-align: center;
-  color: white;
-}
+
 
 footer {
   color: $text-icon-color;
@@ -162,6 +169,7 @@ footer {
   place-items: center;
   border: 2px solid white;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .page {
@@ -170,4 +178,10 @@ footer {
   height: 100vh;
   display: grid;
   place-items: center;
+}
+
+.intro {
+  height: 90vh;
+  text-align: center;
+  color: white;
 }
