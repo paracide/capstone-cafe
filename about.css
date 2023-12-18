@@ -9,6 +9,8 @@ h2 {
 
 .us {
   background-color: #e3dbbe;
+  height: 100vh;
+  width: 100vw;
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(8, 1fr);
@@ -24,8 +26,6 @@ h2 {
   border-radius: 10px;
 }
 .us .us-intro {
-  min-width: 400px;
-  min-height: 300px;
   grid-column: 1/4;
   grid-row: 1/7;
   padding: 5vw;
@@ -76,9 +76,9 @@ h2 {
 .find-us table {
   border-radius: 10px;
   height: 100%;
-  overflow-x: auto; /* 当表格宽度超过视口宽度时启用水平滚动 */
-  display: block; /* 使表格成为块级元素，以便适应宽度 */
-  background: linear-gradient(45deg, #ead7b1, #c8a882); /* 调整角度和颜色 */
+  overflow-x: auto; /* make table responsible*/
+  display: block;
+  background: linear-gradient(45deg, #ead7b1, #c8a882);
   border-collapse: collapse;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
