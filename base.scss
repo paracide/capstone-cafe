@@ -1,3 +1,5 @@
+@import "color";
+
 /*remove the interruption of margin*/
 * {
   box-sizing: border-box;
@@ -20,14 +22,7 @@ a{
   color: black;
 }
 
-$dark-primary-color: #616161;
-$light-primary-color: #F5F5F5;
-$primary-color: #9E9E9E;
-$text-icon-color: #ffffff;
-$accent-color: #9E9E9E;
-$primary-text: #212121;
-$second-text: #757575;
-$divider-color: #BDBDBD;
+
 
 body {
   font-family: Oswald, Arial, Helvetica, sans-serif;
