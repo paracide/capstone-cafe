@@ -34,7 +34,7 @@ h2 {
 .us .us-img {
   grid-column: 6/9;
   grid-row: 3/9;
-  background: url("media/aboutus/us.jpg") no-repeat center;
+  background: url("../images/aboutus/us.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -66,11 +66,11 @@ h2 {
   color: #fff;
 }
 .find-us .loc-dt {
-  background: url("media/aboutus/dt.jpg") no-repeat center;
+  background: url("../images/aboutus/dt.jpg") no-repeat center;
   background-size: cover;
 }
 .find-us .loc-polo {
-  background: url(media/aboutus/polopark.jpg) center no-repeat;
+  background: url(../images/aboutus/polopark.jpg) center no-repeat;
   background-size: cover;
 }
 .find-us table {
