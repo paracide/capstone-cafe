@@ -10,11 +10,11 @@
                   #fffbd5 67%,
                   #f7797d 100%
   );
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  background-clip: text;
+  color: #fff;
   animation: text-clip 4s linear infinite;
 }
 
@@ -29,6 +29,20 @@
   box-sizing: border-box;
 }
 
+/*when click the archer, scroll to the center*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  margin: 0
+}
+
+h1 {
+  font-family: Caveat, Oswald, Arial, Helvetica, sans-serif;
+}
+
 /*remove the interruption of default margin in heading*/
 h1, h2, h3, h4, h5, p {
   margin: 0;
@@ -36,10 +50,6 @@ h1, h2, h3, h4, h5, p {
   // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/*when click the archer, scroll to the center*/
-html {
-  scroll-behavior: smooth;
-}
 
 a {
   text-decoration: none;
@@ -52,25 +62,27 @@ a {
   }
 }
 
-body {
-  font-family: Oswald, Arial, Helvetica, sans-serif;
-  margin: 0
-}
-
-p {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-}
 
 header {
   display: grid;
   padding: 1rem 0 0 0;
   place-items: center;
   width: 100vw;
+  height: 40vh;
 
   #logo {
     height: 10rem;
   }
 }
+
+.intro {
+  width:100vw;
+  height: 60vh;
+  place-items: unset;
+  text-align: center;
+  color: white;
+}
+
 
 .wrapper {
   display: grid;
@@ -202,9 +214,3 @@ footer {
   place-items: center;
 }
 
-.intro {
-  height: 90vh;
-  place-items: unset;
-  text-align: center;
-  color: white;
-}
