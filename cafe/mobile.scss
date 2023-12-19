@@ -5,11 +5,15 @@
   }
 
   footer {
-    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-template-columns: 1fr;
+
+    .contact-us{
+      text-align: center;
+    }
 
     .copyright {
-      grid-column: 1/3;
-      grid-row: 2/3;
+      grid-row: 3/4;
     }
   }
 }
