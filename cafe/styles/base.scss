@@ -60,9 +60,10 @@ nav {
   width: 100px;
   border-radius: 50px;
   background: $text-icon-color;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
   gap: 1rem;
-  padding: 1rem;
+  padding: 10px;
   place-items: center;
   /*fixed in the bottom on the all the elements*/
   position: fixed;
@@ -74,6 +75,7 @@ nav {
     display: inline-block;
     text-decoration: none;
     color: $second-text;
+    text-align: center;
 
     /*change the color*/
     &:hover {
@@ -85,6 +87,7 @@ nav {
   /*the second-menu dont show initially*/
   .second-menu {
     opacity: 0;
+    display: none;
   }
 
   /*the cycle*/
@@ -98,9 +101,9 @@ nav {
   /*when hover the nav, show all the menu*/
   &:hover {
     width: 300px;
-
     .second-menu {
       opacity: 1;
+      display: block;
     }
   }
 }
