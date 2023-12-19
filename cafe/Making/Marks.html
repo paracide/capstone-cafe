@@ -3,8 +3,144 @@
   <head>
     <meta charset="UTF-8">
     <title>Yanyan Cafe - Marks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
+    <!--favicon-->
+    <link rel="icon" href="../favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="192x192" href="../favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon-180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="../favicon-167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon-152.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../favicon-128.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="../favicon.png">
+
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+
+    <style>
+      table {
+        background: white;
+        width: 60vw;
+        height: 50vh;
+        border-radius: 50px;
+        padding: 2rem;
+      }
+
+      table a {
+        color: orangered;
+      }
+    </style>
+
   </head>
   <body>
+    <div class="wrapper">
+      <header>
+        <img id="logo" src="../images/logo.png" alt="yanyan cafe">
+      </header>
+      <nav class="transition shadow">
+        <div class="transition">
+          <div class="menu-shape" id="menu-top"></div>
+        </div>
+        <a href="../index.html">Home</a>
+        <a class="second-menu" href="../components/cats.html">Cats</a>
+        <a class="second-menu" href="../components/menu.html">Menu</a>
+        <a class="second-menu" href="../components/about.html">About</a>
+        <a class="second-menu" href="../components/club.html">Club</a>
+      </nav>
 
+      <main>
+        <div class="page intro">
+          <h1>Marks</h1>
+        </div>
+        <div class="page" id="marks">
+          <div class="marks-wrapper">
+            <table class="loc-card">
+              <thead>
+                <tr>
+                  <th>Index</th>
+                  <th>Project Criteria</th>
+                  <th>File Name</th>
+                  <th>Line Num</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Functioning HTML form with minimum 5 fields and 3 different types.
+                  </td>
+                  <td><a href="../components/club.html#reg">Club</a></td>
+                  <td>1</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>At least one custom image with width, alt, and height attributes set
+                  </td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Salsa Website
+                  </td>
+                  <td><a href="../index.html" target="_blank">Home</a></td>
+                  <td></td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Class selector in an embedded
+                  </td>
+                  <td><a href="../index.html" target="_blank">Home</a></td>
+                  <td>1</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Inline styles used.
+                  </td>
+                  <td><a href="../components/about.html#find-us" target="_blank">About</a></td>
+                  <td>1</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Valid external CSS files.
+                  </td>
+                  <td><a href="../index.html" target="_blank">Home</a></td>
+                  <td>1</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>HTML table used, formatted properly.
+                  </td>
+                  <td><a href="../components/about.html#find-us" target="_blank">About</a></td>
+                  <td>1</td>
+                  <td>10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="follow-us">
+          <div>Follow us for daily doses of feline charm! 🐾</div>
+          <div class="social-media">
+            <a href="#"><img src="../images/social-media/facebook.svg" alt="facebook"></a>
+            <a href="#"> <img src="../images/social-media/instagram.svg" alt="instagram"></a>
+            <a href="#"> <img src="../images/social-media/youtube.svg" alt="youtube"></a>
+          </div>
+        </div>
+        <div class="copyright">Copyright &copy;2023 - Night Fae Studio</div>
+        <div class="contact-us">
+          <div>paracidex@gmail.com</div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
