@@ -28,8 +28,10 @@ h2 {
 .us-page .us-intro {
   grid-column: 1/4;
   grid-row: 1/7;
-  padding: 5vw;
+  padding: 2rem;
   background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .us-page .us-img {
   grid-column: 6/9;
@@ -87,7 +89,7 @@ h2 {
 }
 .find-us-wrapper table th,
 .find-us-wrapper table td {
-  padding: 15px;
+  padding: 0.5rem;
   color: black;
 }
 .find-us-wrapper table th {

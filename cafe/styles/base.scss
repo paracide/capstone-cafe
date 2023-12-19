@@ -6,10 +6,10 @@
 }
 
 /*remove the interruption of default margin in heading*/
-h1, h2, h3, h4, h5, p{
+h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
- // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*when click the archer, scroll to the center*/
@@ -17,16 +17,24 @@ html {
   scroll-behavior: smooth;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
+  transition: all 0.2s ease-in-out;
+  /*change the color*/
+  &:hover {
+    text-decoration: underline;
+    color: $primary-color;
+  }
 }
-
-
 
 body {
   font-family: Oswald, Arial, Helvetica, sans-serif;
   margin: 0
+}
+
+p {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -37,7 +45,6 @@ header {
 
   #logo {
     height: 10rem;
-    border-radius:50%;
   }
 }
 
@@ -61,7 +68,7 @@ nav {
   border-radius: 50px;
   background: $text-icon-color;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
   padding: 10px;
   place-items: center;
@@ -76,12 +83,6 @@ nav {
     text-decoration: none;
     color: $second-text;
     text-align: center;
-
-    /*change the color*/
-    &:hover {
-      text-decoration: underline;
-      color: $primary-color;
-    }
   }
 
   /*the second-menu dont show initially*/
@@ -101,6 +102,7 @@ nav {
   /*when hover the nav, show all the menu*/
   &:hover {
     width: 300px;
+
     .second-menu {
       opacity: 1;
       display: block;
@@ -108,13 +110,10 @@ nav {
   }
 }
 
-
 main {
   display: grid;
   grid-template-columns: 1fr;
 }
-
-
 
 footer {
   color: $text-icon-color;

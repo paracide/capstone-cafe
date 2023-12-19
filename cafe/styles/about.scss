@@ -29,8 +29,10 @@ h2 {
   .us-intro {
     grid-column: 1/4;
     grid-row: 1/7;
-    padding: 5vw;
+    padding: 2rem;
     background-color: white;
+    display:grid;
+    grid-template-columns: 1fr;
   }
 
   .us-img {
@@ -97,7 +99,7 @@ h2 {
 
     th,
     td {
-      padding: 15px;
+      padding: 0.5rem;
       color: black;
     }
 
