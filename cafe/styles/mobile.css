@@ -13,46 +13,40 @@
 * │      └───┴─────┴───────────────────────┴─────┴───┘          │
 * └─────────────────────────────────────────────────────────────┘
 */
-
 @media screen and (max-width: 767px) {
     .wrapper {
         background-image: url("../images/m-bg.jpg");
     }
-
     nav {
         width: 100px;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
-
     nav .home-menu {
         opacity: 0;
         display: none;
     }
-
     nav:hover {
         height: 40vh;
         width: 90vw;
         border-radius: 10px;
     }
-
     nav:hover .second-menu, nav:hover .home-menu {
         opacity: 1;
         display: block;
     }
-
     footer {
         height: 50vh;
         text-align: center;
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
-
     footer .contact-us {
         text-align: center;
     }
-
     footer .copyright {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
         grid-row: 3/4;
     }
 }
-
-/*# sourceMappingURL=mobile.css.map */

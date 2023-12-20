@@ -38,6 +38,13 @@
 * │      └───┴─────┴───────────────────────┴─────┴───┘          │
 * └─────────────────────────────────────────────────────────────┘
 */
+      /*
+ * Prefixed by https://autoprefixer.github.io
+ * PostCSS: v8.4.14,
+ * Autoprefixer: v10.4.7
+ * Browsers: since 2014
+ */
+
       h1 {
         font-size: 10rem;
       }
@@ -47,15 +54,78 @@
       }
 
       .page-wrapper {
+        display: -ms-grid;
         display: grid;
         padding: 5vh 5vw;
         height: 90vh;
         width: 90vw;
+        -ms-grid-columns: 2fr 1rem 1fr 1rem 1fr 1rem 1fr;
         grid-template-columns: 2fr 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr 1rem 1fr 1rem 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 1rem;
         border-radius: 10px;
         color: white;
+      }
+
+      .page-wrapper > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+      }
+
+      .page-wrapper > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+      }
+
+      .page-wrapper > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+      }
+
+      .page-wrapper > *:nth-child(4) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 7;
+      }
+
+      .page-wrapper > *:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+      }
+
+      .page-wrapper > *:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+      }
+
+      .page-wrapper > *:nth-child(7) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
+      }
+
+      .page-wrapper > *:nth-child(8) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 7;
+      }
+
+      .page-wrapper > *:nth-child(9) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 1;
+      }
+
+      .page-wrapper > *:nth-child(10) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 3;
+      }
+
+      .page-wrapper > *:nth-child(11) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 5;
+      }
+
+      .page-wrapper > *:nth-child(12) {
+        -ms-grid-row: 5;
+        -ms-grid-column: 7;
       }
 
       .page-wrapper * {
@@ -63,7 +133,11 @@
       }
 
       .main-img {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
         grid-row: 1/3;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 3;
         grid-column: 2/5;
         transition: all 0.5s ease-in-out;
         background-position: center;
@@ -75,6 +149,7 @@
       .small-img {
         width: 100%;
         height: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
         border-radius: 10px;
         cursor: pointer;
@@ -123,7 +198,11 @@
 
         h2 {
           font-size: 3rem;
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 1;
           grid-row: 1/2;
+          -ms-grid-column: 1;
+          -ms-grid-column-span: 3;
           grid-column: 1/4;
         }
 
@@ -132,21 +211,90 @@
         }
 
         .page-wrapper {
+          -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
           grid-template-columns: 1fr 1fr 1fr;
+          -ms-grid-rows: 1fr 1rem 5fr 1rem 1fr 1rem 1fr;
           grid-template-rows: 1fr 5fr 1fr 1fr;
         }
 
+        .page-wrapper > *:nth-child(1) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 1;
+        }
+
+        .page-wrapper > *:nth-child(2) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 3;
+        }
+
+        .page-wrapper > *:nth-child(3) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 5;
+        }
+
+        .page-wrapper > *:nth-child(4) {
+          -ms-grid-row: 3;
+          -ms-grid-column: 1;
+        }
+
+        .page-wrapper > *:nth-child(5) {
+          -ms-grid-row: 3;
+          -ms-grid-column: 3;
+        }
+
+        .page-wrapper > *:nth-child(6) {
+          -ms-grid-row: 3;
+          -ms-grid-column: 5;
+        }
+
+        .page-wrapper > *:nth-child(7) {
+          -ms-grid-row: 5;
+          -ms-grid-column: 1;
+        }
+
+        .page-wrapper > *:nth-child(8) {
+          -ms-grid-row: 5;
+          -ms-grid-column: 3;
+        }
+
+        .page-wrapper > *:nth-child(9) {
+          -ms-grid-row: 5;
+          -ms-grid-column: 5;
+        }
+
+        .page-wrapper > *:nth-child(10) {
+          -ms-grid-row: 7;
+          -ms-grid-column: 1;
+        }
+
+        .page-wrapper > *:nth-child(11) {
+          -ms-grid-row: 7;
+          -ms-grid-column: 3;
+        }
+
+        .page-wrapper > *:nth-child(12) {
+          -ms-grid-row: 7;
+          -ms-grid-column: 5;
+        }
+
         .main-img {
+          -ms-grid-row: 2;
+          -ms-grid-row-span: 1;
           grid-row: 2/3;
+          -ms-grid-column: 1;
+          -ms-grid-column-span: 3;
           grid-column: 1/4;
         }
 
         p {
+          -ms-grid-row: 3;
+          -ms-grid-row-span: 1;
           grid-row: 3/4;
+          -ms-grid-column: 1;
+          -ms-grid-column-span: 3;
           grid-column: 1/4;
         }
       }
-
     </style>
   </head>
 

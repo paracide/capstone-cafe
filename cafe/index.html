@@ -63,12 +63,15 @@
       /*cats*/
       .home-cats-container {
         background-color: #ffffff;
+        -ms-grid-rows: 1fr 1fr 6fr;
         grid-template-rows: 1fr 1fr 6fr;
         place-items: center;
       }
 
       .home-cats-container .home-cat-card-group {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 2vw 1fr 2vw 1fr 2vw 1fr;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2vw;
       }
@@ -88,13 +91,17 @@
       .home-cats-container .home-cat-card img {
         height: 100%;
         width: 100%;
+        -webkit-filter: grayscale(0.3);
         filter: grayscale(0.3);
+        -o-object-fit: cover;
         object-fit: cover;
         transition: all 0.3s ease-in-out;
       }
 
       .home-cats-container .home-cat-card:hover img {
+        -webkit-transform: scale(1.1);
         transform: scale(1.1);
+        -webkit-filter: grayscale(0);
         filter: grayscale(0);
       }
 
@@ -104,7 +111,9 @@
         height: 100%;
         top: 0;
         text-align: center;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-rows: 10fr 10fr 2fr;
         grid-template-rows: 10fr 10fr 2fr;
         place-items: baseline center;
         padding: 1rem;
@@ -125,6 +134,7 @@
 
       /*menu*/
       .home-menu-container {
+        -ms-grid-columns: 3fr 1rem 2fr 1rem 2fr;
         grid-template-columns: 3fr 2fr 2fr;
         grid-gap: 1rem;
         background: #cccccc;
@@ -133,12 +143,15 @@
 
 
       .home-menu-container .menu-img-container {
+        display: -ms-grid;
         display: grid;
         width: 100%;
         height: 100%;
         color: #ffffff;
+        -ms-grid-rows: 5fr 2fr;
         grid-template-rows: 5fr 2fr;
         place-items: center;
+        -webkit-filter: sepia(0.2);
         filter: sepia(0.2);
       }
 
@@ -149,15 +162,22 @@
       }
 
       .home-menu-container .menu-img-container:hover {
+        -webkit-filter: sepia(0);
         filter: sepia(0);
       }
 
       #menu-intro {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
         grid-row: 2/3;
       }
 
       #coffee {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
         grid-column: 2/3;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
         grid-row: 1/3;
         width: 100%;
         height: 100%;
@@ -187,7 +207,9 @@
       }
 
       .home-us-container .home-us-wrapper {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         place-items: center;
         background: #fff;
@@ -198,7 +220,11 @@
       }
 
       .home-us-container .home-us-wrapper #us-img {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
         grid-row: 1/3;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 1;
         grid-column: 2/3;
         overflow: hidden;
       }
@@ -211,6 +237,13 @@
 
     <!--mobile-->
     <style>
+      /*
+  * Prefixed by https://autoprefixer.github.io
+  * PostCSS: v8.4.14,
+  * Autoprefixer: v10.4.7
+  * Browsers: since 2014
+  */
+
       @media screen and (max-width: 767px) {
         /*smaller font size for title*/
         h1 {
@@ -235,6 +268,7 @@
 
         /*menu 1 column in mobile*/
         .home-menu-container {
+          -ms-grid-columns: 1fr;
           grid-template-columns: 1fr;
         }
 
@@ -251,6 +285,7 @@
 
         /*us 1 column*/
         .home-us-container .home-us-wrapper {
+          -ms-grid-columns: 1fr;
           grid-template-columns: 1fr;
         }
 
