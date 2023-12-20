@@ -13,40 +13,50 @@
 * │      └───┴─────┴───────────────────────┴─────┴───┘          │
 * └─────────────────────────────────────────────────────────────┘
 */
+
+/*change to mobile when width less than 768px*/
 @media screen and (max-width: 767px) {
     .wrapper {
         background-image: url("../images/m-bg.jpg");
     }
+
+    /*make the nav smaller*/
     nav {
         width: 100px;
-        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
+
+    /*hidden home menu when mobile*/
     nav .home-menu {
         opacity: 0;
         display: none;
     }
+
+    /*show the entire nav when hover*/
     nav:hover {
         height: 40vh;
         width: 90vw;
         border-radius: 10px;
     }
+
     nav:hover .second-menu, nav:hover .home-menu {
         opacity: 1;
         display: block;
     }
+
+    /*footer need higher to put info*/
     footer {
         height: 50vh;
         text-align: center;
-        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
+
     footer .contact-us {
         text-align: center;
     }
+
+    /*move the copyright to bottom*/
     footer .copyright {
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 1;
         grid-row: 3/4;
     }
 }

@@ -45,6 +45,7 @@
         font-size: 4rem;
       }
 
+      /*us page need more grid rows and columns to make two div separated horizontally, crossed vertically*/
       .us-page {
         background-color: #e3dbbe;
         height: 100vh;
@@ -58,16 +59,12 @@
         grid-template-rows: repeat(8, 1fr);
       }
 
+      /* hidden the about us text in desktop*/
       .us-page #about-us {
         display: none;
       }
 
-      .us-page .us-intro, .us-page .us-img {
-        width: 40vw;
-        height: 30vw;
-        border-radius: 10px;
-      }
-
+      /*intro layout*/
       .us-page .us-intro {
         -ms-grid-column: 1;
         -ms-grid-column-span: 3;
@@ -83,6 +80,7 @@
         grid-template-columns: 1fr;
       }
 
+      /*us img style*/
       .us-page .us-img {
         -ms-grid-column: 6;
         -ms-grid-column-span: 3;
@@ -90,11 +88,18 @@
         -ms-grid-row: 3;
         -ms-grid-row-span: 6;
         grid-row: 3/9;
-        overflow: hidden;
+        overflow: hidden; /*hidden the overflow img when the resolution changed*/
         max-width: 500px;
-        height: 375px;
       }
 
+      /*us two div size*/
+      .us-page .us-intro, .us-page .us-img {
+        width: 40vw;
+        height: 30vw;
+        border-radius: 10px;
+      }
+
+      /*keep the img the same ratio when width changed due to the resolution*/
       .us-page .us-img img {
         max-width: 100%;
         height: auto;
@@ -115,26 +120,7 @@
         place-items: center;
       }
 
-      .find-us-wrapper > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-      }
-
-      .find-us-wrapper > *:nth-child(2) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 3;
-      }
-
-      .find-us-wrapper > *:nth-child(3) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;
-      }
-
-      .find-us-wrapper > *:nth-child(4) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 3;
-      }
-
+      /*find us style*/
       .find-us-wrapper .loc-card {
         color: black;
         width: 100%;
@@ -143,7 +129,7 @@
         overflow: hidden;
         -webkit-filter: sepia(0.3);
         filter: sepia(0.3);
-        background: linear-gradient(45deg, #ead7b1, #c8a882); /* 调整角度和颜色 */
+        background: linear-gradient(45deg, #ead7b1, #c8a882);
         display: -ms-grid;
         display: grid;
         -ms-grid-rows: 3fr 1fr;
@@ -165,6 +151,7 @@
         background-size: cover;
       }
 
+      /*table style*/
       .find-us-wrapper table {
         border-radius: 10px;
         height: 100%;
@@ -190,6 +177,7 @@
         text-align: left;
       }
 
+      /*let user know the hovering line of table*/
       .find-us-wrapper table tr:hover {
         background-color: rgba(255, 255, 255, 0.3);
       }
@@ -202,14 +190,9 @@
 
         h2 {
           font-size: 3rem;
-          -ms-grid-row: 1;
-          -ms-grid-row-span: 1;
-          grid-row: 1/2;
-          -ms-grid-column: 1;
-          -ms-grid-column-span: 3;
-          grid-column: 1/4;
         }
 
+        /*change to 1 column layout*/
         .us-page {
           -ms-grid-columns: 1fr;
           grid-template-columns: 1fr;
@@ -217,25 +200,12 @@
           grid-template-rows: 1fr 2fr 2fr;
         }
 
-        .us-page > *:nth-child(1) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 1;
-        }
-
-        .us-page > *:nth-child(2) {
-          -ms-grid-row: 3;
-          -ms-grid-column: 1;
-        }
-
-        .us-page > *:nth-child(3) {
-          -ms-grid-row: 5;
-          -ms-grid-column: 1;
-        }
-
+        /*show the title in mobile*/
         .us-page #about-us {
           display: block;
         }
 
+        /*remove the desktop grid column and row*/
         .us-page .us-intro {
           grid-column: unset;
           grid-row: unset;
@@ -257,25 +227,11 @@
           grid-template-rows: 4fr 4fr 8fr;
         }
 
-        .find-us-wrapper > *:nth-child(1) {
-          -ms-grid-row: 1;
-          -ms-grid-column: 1;
-        }
-
-        .find-us-wrapper > *:nth-child(2) {
-          -ms-grid-row: 3;
-          -ms-grid-column: 1;
-        }
-
-        .find-us-wrapper > *:nth-child(3) {
-          -ms-grid-row: 5;
-          -ms-grid-column: 1;
-        }
-
         .find-us-wrapper td {
           padding: 5px;
         }
 
+        /*hidden find us title in mobile*/
         .find-us-wrapper #find-us-title {
           display: none;
         }
