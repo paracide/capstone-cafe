@@ -1,6 +1,4 @@
 @import "color";
-
-
 .gradient-anime {
   text-transform: uppercase;
   background-image: linear-gradient(
@@ -87,7 +85,7 @@ header {
 }
 
 
-.wrapper {
+.wrapper{
   display: grid;
   place-items: center;
   width: 100vw;
@@ -100,6 +98,7 @@ header {
   margin: 0;
   padding: 0;
 }
+
 
 /*navigation*/
 nav {

@@ -22,7 +22,6 @@ h2 {
 .us-page .us-intro, .us-page .us-img {
   width: 40vw;
   height: 30vw;
-  border: 1px solid white;
   border-radius: 10px;
 }
 .us-page .us-intro {
@@ -36,15 +35,19 @@ h2 {
 .us-page .us-img {
   grid-column: 6/9;
   grid-row: 3/9;
-  background: url("../images/aboutus/us.jpg") no-repeat center;
-  background-size: cover;
+  overflow: hidden;
+  max-width: 500px;
+  height: 375px;
+}
+.us-page .us-img img {
+  max-width: 100%;
+  height: auto;
 }
 
 .find-us-wrapper {
   width: 90vw;
   height: 90vh;
   border-radius: 10px;
-  padding: 5vw;
   background-color: white;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -135,9 +138,6 @@ h2 {
   }
   .find-us-wrapper td {
     padding: 5px;
-  }
-  .find-us-wrapper #find-us-title {
-    grid-row: 1/2;
   }
 }
 
