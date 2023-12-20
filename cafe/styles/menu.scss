@@ -39,8 +39,8 @@ hr {
     width: 100%;
     text-decoration: none;
     font-size: 1.5rem;
-    color: #000;
     text-align: center;
+    color: #fff;
     vertical-align: center;
   }
 
@@ -57,13 +57,10 @@ hr {
 
 }
 
-.menu-button {
-  width: 20vw;
+.button {
+  width: 150px;
   height: 10vh;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: grid;
-  place-items: center;
-  border: 4px double rgba(0, 0, 0, 0.8);
+  border: none;
 }
 
 #coffee {
@@ -84,15 +81,9 @@ hr {
   background-size: cover;
 }
 
-
 .current-button {
-  box-shadow: 0 0 14px -7px #f09819;
   border-color: white;
-  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
-
-  a {
-    color: white;
-  }
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
 }
 
 .current-button:hover {
@@ -118,13 +109,14 @@ hr {
     grid-column: 1/4;
   }
 
-  .menu-button {
+  .button {
     width: 23vw;
     height: 8vh;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: grid;
-    place-items: center;
-    border: 4px double rgba(0, 0, 0, 0.8);
+    border: none;
+
+    a {
+      font-size: 1rem;
+    }
   }
 }
 
