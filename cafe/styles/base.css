@@ -1,3 +1,5 @@
+
+
 /*
 * ┌─────────────────────────────────────────────────────────────┐
 * │┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐│
@@ -13,27 +15,41 @@
 * │      └───┴─────┴───────────────────────┴─────┴───┘          │
 * └─────────────────────────────────────────────────────────────┘
 */
+
+/*text */
+@-webkit-keyframes text-clip {
+    to {
+        background-position: 200% center;
+    }
+}
+
 @keyframes text-clip {
     to {
         background-position: 200% center;
     }
 }
 
-.gradient-anime {
+/*gra*/
+.text-gradient-anime {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg, #c6ffdd 0%, #fbd786 29%, #fffbd5 67%, #f7797d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% auto;
-    background-clip: text;
+    background-clip: text;/*make the background painted */
     color: #fff;
+    -webkit-animation: text-clip 4s linear infinite;
     animation: text-clip 4s linear infinite;
 }
 
 
+
 /*remove the interruption of margin*/
 * {
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /*when click the archer, scroll to the center*/
@@ -74,6 +90,7 @@ a:hover {
 }
 
 header {
+    display: -ms-grid;
     display: grid;
     padding: 1rem 0 0 0;
     place-items: center;
@@ -85,16 +102,17 @@ header #logo {
     height: 10rem;
 }
 
-.intro {
+/*each page have a intro page*/
+.intro-page {
     width: 100vw;
     height: 60vh;
     padding: 5vh 5vw;
-    place-items: unset;
     text-align: center;
     color: white;
 }
 
 .wrapper {
+    display: -ms-grid;
     display: grid;
     place-items: center;
     width: 100vw;
@@ -104,8 +122,6 @@ header #logo {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0;
-    padding: 0;
 }
 
 /*navigation*/
@@ -114,7 +130,9 @@ nav {
     width: 100px;
     border-radius: 10px;
     background: #ffffff;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
     grid-template-columns: repeat(6, 1fr);
     gap: 1rem;
     padding: 10px;
@@ -122,11 +140,8 @@ nav {
     /*fixed in the bottom on the all the elements*/
     position: fixed;
     bottom: 1.8rem;
-    z-index: 100;
+    z-index: 100; /*nav always on the top level*/
     overflow: hidden; /*make the second menu hidden*/
-    /*the second-menu dont show initially*/
-    /*the cycle*/
-    /*when hover the nav, show all the menu*/
 }
 
 nav a {
@@ -136,6 +151,7 @@ nav a {
     text-align: center;
 }
 
+/*the second-menu dont show initially*/
 nav .second-menu {
     opacity: 0;
     display: none;
@@ -148,17 +164,22 @@ nav #menu-top {
     border-radius: 50%;
 }
 
+/*the nav expand when hover*/
 nav:hover {
     width: 300px;
 }
 
+/*the second-menu show when hover*/
 nav:hover .second-menu {
     opacity: 1;
     display: block;
 }
 
+/*all the layout is grid*/
 main {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
 }
 
@@ -167,17 +188,21 @@ footer {
     background-image: linear-gradient(to bottom, #2c3e50, #3E5151);
     height: 30vh;
     width: 100vw;
+    display: -ms-grid;
     display: grid;
     padding: 50px;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer .contact-us {
+    display: -ms-grid;
     display: grid;
     text-align: right;
 }
 
 footer .follow-us {
+    display: -ms-grid;
     display: grid;
 }
 
@@ -189,51 +214,47 @@ footer .copyright {
     text-align: center;
 }
 
+/*default border*/
 .border {
     border: 0.5px double white;
     border-radius: 10px;
 }
 
+/*default shadow*/
 .shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/*default transition*/
 .transition {
     transition: all 0.3s ease-in-out;
 }
 
+/*default button*/
 .button {
     height: 2.25rem;
     width: 5rem;
     color: white;
     border: 1.5px solid white;
     text-decoration: none;
+    display: -ms-grid;
     display: grid;
     place-items: center;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
     z-index: 1;
     background: rgba(0, 0, 0, 0.3);
 }
 
+/*flash anime*/
 .flash {
     overflow: hidden;
 }
 
-.flash:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    z-index: -2;
-}
-
+/*an cover*/
 .flash:before {
     content: "";
     position: absolute;
@@ -250,12 +271,12 @@ footer .copyright {
     width: 100%;
 }
 
+/*each page cover the entire screen*/
 .page {
     padding: 5vh 5vw;
     width: 100vw;
     height: 100vh;
+    display: -ms-grid;
     display: grid;
     place-items: center;
 }
-
-/*# sourceMappingURL=base.css.map */
