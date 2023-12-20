@@ -43,6 +43,7 @@
         font-size: 2rem;
       }
 
+      /*club layout*/
       .club {
         display: -ms-grid;
         display: grid;
@@ -55,6 +56,7 @@
         display: block;
       }
 
+      /*intro club higher in desktop*/
       .club-intro .intro-header {
         background-image: url("images/club/club.JPG");
         width: 100%;
@@ -67,16 +69,19 @@
         padding: 1rem 1rem;
       }
 
+      /*show the ul and expand the div when hover*/
       .club-intro ul {
         opacity: 0;
         display: none;
       }
 
+      /*make the background moving*/
       .club-intro:hover .intro-header {
         height: 50%;
         background-position: top;
       }
 
+      /*remove the img in mobile to save more space for text*/
       @media screen and (max-width: 767px) {
         .club-intro:hover .intro-header {
           height: 0;
@@ -88,6 +93,7 @@
         display: block;
       }
 
+      /*form layout*/
       .club-reg {
         display: -ms-grid;
         display: grid;
@@ -96,6 +102,7 @@
         padding: 2rem;
       }
 
+      /*material design card*/
       .card {
         height: 100%;
         width: 80%;
@@ -103,9 +110,6 @@
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 10px 20px 0 rgba(153, 153, 153, 0.25);
-        /*input*/
-        /*button*/
-        /*info*/
       }
 
       .card form {
@@ -121,6 +125,7 @@
         transition: 0.25s ease;
       }
 
+      /*remove the default form style*/
       .card .input-field {
         border: 0;
         background-color: transparent;
@@ -132,6 +137,7 @@
         border-bottom-color: orangered;
       }
 
+      /*make the action expand the entire column*/
       .card .action {
         -ms-grid-column: 1;
         -ms-grid-column-span: 2;
@@ -167,6 +173,7 @@
           font-size: 1.5rem;
         }
 
+        /*change the mobile layout*/
         .club {
           -ms-grid-columns: 1fr;
           grid-template-columns: 1fr;
