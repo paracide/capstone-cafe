@@ -4,7 +4,6 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  background-image: linear-gradient(to right, #FFD700, #FF6347);
 }
 
 h3 {
@@ -90,9 +89,10 @@ hr {
   box-shadow: 0 0 14px -7px #f09819;
   border-color: white;
   background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
-    a{
-      color: white;
-    }
+
+  a {
+    color: white;
+  }
 }
 
 .current-button:hover {

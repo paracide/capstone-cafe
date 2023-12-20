@@ -3,43 +3,39 @@
   <head>
     <meta charset="UTF-8">
     <title>Yanyan Cafe - Club</title>
-
+    <meta content="Moonlit paws gather, a tapestry of fur and friendship. Join the clan of cat-kissed souls, weave stories by
+            flickering candlelight, and celebrate the magic of nine lives lived in harmony" name="description">
     <!--favicon-->
-    <link rel="icon" href="../favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="192x192" href="../favicon-192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon-180.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="../favicon-167.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../favicon-152.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="../favicon-128.png">
-    <link rel="apple-touch-icon" sizes="32x32" href="../favicon.png">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../favicon.png" rel="icon" type="image/x-icon">
+    <link href="../favicon-192.png" rel="apple-touch-icon" sizes="192x192">
+    <link href="../favicon-180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="../favicon-167.png" rel="apple-touch-icon" sizes="167x167">
+    <link href="../favicon-152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="../favicon-128.png" rel="apple-touch-icon" sizes="128x128">
+    <link href="../favicon.png" rel="apple-touch-icon" sizes="32x32">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Oswald:wght@400;700&display=swap"
           rel="stylesheet">
-    <title>Yanyan Cafe - Home</title>
+    <link href="../styles/base.css" rel="stylesheet">
+    <link href="../styles/mobile.css" rel="stylesheet">
+    <link href="../styles/club.css" rel="stylesheet">
+    <link href="../styles/print.css" media="print" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/mobile.css">
-    <link rel="stylesheet" href="../styles/club.css">
-    <link rel="stylesheet" href="../styles/print.css" media="print">
-
-    <style>
-    </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <img id="logo" src="../images/logo.png" alt="yanyan cafe">
+        <img alt="yanyan cafe" id="logo" src="../images/logo.png">
       </header>
       <nav class="transition shadow">
         <div class="transition">
           <div class="menu-shape" id="menu-top"></div>
         </div>
-        <a class="home-menu" title="Yanyan Cafe - Home" href="../index.html">Home</a>
-        <a class="second-menu" title="Yanyan Cafe - Cats" href="cats.html">Cats</a>
-        <a class="second-menu" title="Yanyan Cafe - Menu" href="menu.html">Menu</a>
-        <a class="second-menu" title="Yanyan Cafe - About" href="about.html">About</a>
-        <a class="second-menu" title="Yanyan Cafe - Club" href="club.html">Club</a>
+        <a class="home-menu" href="../index.html" title="Yanyan Cafe - Home">Home</a>
+        <a class="second-menu" href="cats.html" title="Yanyan Cafe - Cats">Cats</a>
+        <a class="second-menu" href="menu.html" title="Yanyan Cafe - Menu">Menu</a>
+        <a class="second-menu" href="about.html" title="Yanyan Cafe - About">About</a>
+        <a class="second-menu" href="club.html" title="Yanyan Cafe - Club">Club</a>
       </nav>
 
       <main>
@@ -63,28 +59,28 @@
             </div>
           </div>
           <div class="card club-reg" id="reg">
-            <form class="card-form" action="http://scott-media.com/test/form_display.php" method="post">
+            <form action="http://scott-media.com/test/form_display.php" class="card-form" method="post">
               <h2 class="action">Get Your Membership</h2>
               <label class="input-label" for="name">Name:</label>
-              <input type="text" class="input-field" id="name" name="name" required>
+              <input class="input-field" id="name" name="name" required type="text">
               <label class="input-label" for="birthday">Birthday:</label>
-              <input type="date" class="input-field" id="birthday" name="birthday" required>
+              <input class="input-field" id="birthday" name="birthday" required type="date">
               <label class="input-label" for="email">Email:</label>
-              <input type="email" class="input-field" id="email" name="email" required>
+              <input class="input-field" id="email" name="email" required type="email">
               <label class="input-label" for="phone">Phone Number:</label>
-              <input type="tel" class="input-field" id="phone" name="phone" pattern="[0-9]{10}"
-                     placeholder="1234567890" required>
+              <input class="input-field" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890"
+                     required type="tel">
               <label class="input-label" for="contact_method">Preferred Contact Method:</label>
-              <select id="contact_method" class="input-field" name="contact_method" required>
+              <select class="input-field" id="contact_method" name="contact_method" required>
                 <option value="email">Email</option>
                 <option value="phone">Phone</option>
               </select>
               <label class="input-label action">
-                <input type="checkbox" class="input-field" name="subscribe" value="yes" checked>
+                <input checked class="input-field" name="subscribe" type="checkbox" value="yes">
                 Subscribe to newsletter
               </label>
               <div class="action">
-                <button class="action-button">Submit</button>
+                <button class="action-button">Join Us</button>
               </div>
               <div class="card-info action">
                 By signing up you are agreeing to our <a href="#">Terms and Conditions</a>
@@ -99,11 +95,11 @@
         <div class="follow-us">
           <div>Follow us for daily doses of feline charm! 🐾</div>
           <div class="social-media">
-            <a href="#" title="Yanyan Cafe - Facebook"><img src="../images/social-media/facebook.svg"
-                                                            alt="facebook"></a>
-            <a href="#" title="Yanyan Cafe - Instagram"> <img src="../images/social-media/instagram.svg"
-                                                              alt="instagram"></a>
-            <a href="#" title="Yanyan Cafe - Youtube"> <img src="../images/social-media/youtube.svg" alt="youtube"></a>
+            <a href="#" title="Yanyan Cafe - Facebook"><img alt="facebook"
+                                                            src="../images/social-media/facebook.svg"></a>
+            <a href="#" title="Yanyan Cafe - Instagram"> <img alt="instagram"
+                                                              src="../images/social-media/instagram.svg"></a>
+            <a href="#" title="Yanyan Cafe - Youtube"> <img alt="youtube" src="../images/social-media/youtube.svg"></a>
           </div>
         </div>
         <div class="copyright">Copyright &copy;2023 - Night Fae Studio</div>

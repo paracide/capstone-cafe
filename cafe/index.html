@@ -2,23 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Yanyan Cafe - Where sunbeams meet purrs, and the world shrinks to soft paw prints, a haven awaits, woven from stories and
+            sleep." name="description">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Oswald:wght@400;700&display=swap"
           rel="stylesheet">
     <title>Yanyan Cafe - Home</title>
 
     <!--favicon-->
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="192x192" href="favicon-192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="favicon-167.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon-152.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="favicon-128.png">
-    <link rel="apple-touch-icon" sizes="32x32" href="favicon.png">
+    <link href="favicon.png" rel="icon" type="image/x-icon">
+    <link href="favicon-192.png" rel="apple-touch-icon" sizes="192x192">
+    <link href="favicon-180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="favicon-167.png" rel="apple-touch-icon" sizes="167x167">
+    <link href="favicon-152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="favicon-128.png" rel="apple-touch-icon" sizes="128x128">
+    <link href="favicon.png" rel="apple-touch-icon" sizes="32x32">
 
-    <link rel="stylesheet" href="styles/base.css" media="screen">
-    <link rel="stylesheet" href="styles/mobile.css" media="screen">
-    <link rel="stylesheet" href="styles/print.css" media="print">
+    <link href="styles/base.css" media="screen" rel="stylesheet">
+    <link href="styles/mobile.css" media="screen" rel="stylesheet">
+    <link href="styles/print.css" media="print" rel="stylesheet">
 
     <!--desktop-->
     <style media="screen">
@@ -88,9 +90,17 @@
         top: 0;
         text-align: center;
         display: grid;
-        grid-template-rows: 10fr 1fr 22fr 11fr;
-        place-items: center;
+        grid-template-rows: 10fr 10fr 2fr;
+        place-items: baseline center;
+        padding: 1rem;
       }
+
+      .home-cat-title {
+        background: rgba(0, 0, 0, 0.5);
+        width: 60%;
+        border-radius: 10px;
+      }
+
 
       .home-cats-container .card-line {
         height: 1px;
@@ -114,14 +124,13 @@
         color: #ffffff;
         grid-template-rows: 5fr 2fr;
         place-items: center;
-        filter: sepia(0.5);
-        /*menu img animation*/
+        filter: sepia(0.2);
       }
 
       .home-menu-container h3 {
         background: rgba(0, 0, 0, 0.5);
         padding: 0.5rem 1rem;
-        border-radius: 5px;
+        border-radius: 10px;
       }
 
       .home-menu-container .menu-img-container:hover {
@@ -169,7 +178,7 @@
         background: #fff;
         width: 90vw;
         height: 70vh;
-        border-radius: 20px;
+        border-radius: 10px;
         padding: 5vw;
       }
 
@@ -183,10 +192,6 @@
         width: 100%;
         height: 100%;
       }
-    </style>
-
-    <style>
-
     </style>
 
     <!--mobile-->
@@ -247,17 +252,17 @@
   <body>
     <div class="wrapper">
       <header>
-        <img id="logo" src="images/logo.png" height="" alt="yanyan cafe">
+        <img alt="yanyan cafe" height="" id="logo" src="images/logo.png">
       </header>
       <nav class="transition shadow">
         <div class="transition">
           <div class="menu-shape" id="menu-top"></div>
         </div>
-        <a class="home-menu" title="Yanyan Cafe - Home" href="index.html">Home</a>
-        <a class="second-menu" title="Yanyan Cafe - Cats" href="components/cats.html">Cats</a>
-        <a class="second-menu" title="Yanyan Cafe - Menu" href="components/menu.html">Menu</a>
-        <a class="second-menu" title="Yanyan Cafe - About" href="components/about.html">About</a>
-        <a class="second-menu" title="Yanyan Cafe - Club" href="components/club.html">Club</a>
+        <a class="home-menu" href="index.html" title="Yanyan Cafe - Home">Home</a>
+        <a class="second-menu" href="components/cats.html" title="Yanyan Cafe - Cats">Cats</a>
+        <a class="second-menu" href="components/menu.html" title="Yanyan Cafe - Menu">Menu</a>
+        <a class="second-menu" href="components/about.html" title="Yanyan Cafe - About">About</a>
+        <a class="second-menu" href="components/club.html" title="Yanyan Cafe - Club">Club</a>
       </nav>
       <main>
         <div class="intro">
@@ -273,39 +278,37 @@
           <p>Meet our exclusive "Cat Royalty" members, carefully chosen for enchanting companionship.</p>
           <div class="home-cat-card-group">
             <div class="home-cat-card border shadow" id="xiuxiu">
-              <img src="images/home/xiuxiu.jpg" alt="xiuxiu">
+              <img alt="xiuxiu" src="images/home/xiuxiu.jpg">
               <div class="home-card-text">
-                <div class="home-cat-title">Baby</div>
+                <div class="home-cat-title border">Baby
+
+                </div>
                 <div class="card-line"></div>
-                <h4 class="home-cat-name">Xiuxiu</h4>
-                <a class="button" href="components/cats.html#xiuxiu-page">Explore</a>
+                <a class="button" href="components/cats.html#xiuxiu-page" title="Cats xiuxiu">Xiuxiu</a>
               </div>
             </div>
             <div class="home-cat-card border shadow" id="huabi">
-              <img src="images/home/huabi.jpg" alt="huabi">
+              <img alt="huabi" src="images/home/huabi.jpg">
               <div class="home-card-text">
-                <div class="home-cat-title">Evil</div>
+                <div class="home-cat-title border">Evil</div>
                 <div class="card-line"></div>
-                <h4 class="home-cat-name">Huabi</h4>
-                <a class="button" href="components/cats.html">Explore</a>
+                <a class="button" href="components/cats.html#huabi-page" title="Cats huabi">Huabi</a>
               </div>
             </div>
             <div class="home-cat-card border shadow" id="zhangmeili">
-              <img src="images/home/zhangmeili.jpg" alt="zhangmeili">
+              <img alt="zhangmeili" src="images/home/zhangmeili.jpg">
               <div class="home-card-text">
-                <div class="home-cat-title">Angel</div>
+                <div class="home-cat-title border">Angel</div>
                 <div class="card-line"></div>
-                <h4 class="home-cat-name">Zhangmeili</h4>
-                <a class="button" href="components/cats.html">Explore</a>
+                <a class="button" href="components/cats.html#ml-page" title="Cats zhangmeili">Zhangmeili</a>
               </div>
             </div>
             <div class="home-cat-card border shadow" id="pipi">
-              <img src="images/home/pipi.jpg" alt="pipi">
+              <img alt="pipi" src="images/home/pipi.jpg">
               <div class="home-card-text">
-                <div class="home-cat-title">Silly</div>
+                <div class="home-cat-title border">Silly</div>
                 <div class="card-line"></div>
-                <h4 class="home-cat-name">Pipi</h4>
-                <a class="button" href="components/cats.html">Explore</a>
+                <a class="button" href="components/cats.html#pipi-page" title="Cats pipi">Pipi</a>
               </div>
             </div>
           </div>
@@ -318,18 +321,18 @@
             carefully
             curated beverages and snacks.
           </p>
-          <div id="coffee" class="border menu-img-container transition">
+          <div class="border menu-img-container transition" id="coffee">
             <h3>COFFEE</h3>
-            <a class="button" title="Yanyan Cafe - Menu Coffee" href="components/menu.html#coffee">Explore</a>
+            <a class="button" href="components/menu.html#coffee" title="Yanyan Cafe - Menu Coffee">Explore</a>
           </div>
-          <div id="donut" class="border menu-img-container transition">
+          <div class="border menu-img-container transition" id="donut">
             <h3>SNACK</h3>
-            <a class="button" title="Yanyan Cafe - Menu Snack" href="components/menu.html#snack">Explore</a>
+            <a class="button" href="components/menu.html#snack" title="Yanyan Cafe - Menu Snack">Explore</a>
           </div>
 
-          <div id="beverage" class="border menu-img-container transition">
+          <div class="border menu-img-container transition" id="beverage">
             <h3>BEVERAGES</h3>
-            <a class="button" title="Yanyan Cafe - Menu Beverages" href="components/menu.html#beverage">Explore</a>
+            <a class="button" href="components/menu.html#beverage" title="Yanyan Cafe - Menu Beverages">Explore</a>
           </div>
         </div>
 
@@ -340,7 +343,7 @@
               of Winnipeg, we are a cozy space dedicated to creating memorable moments with our charming cats.
             </p>
             <div id="us-img">
-              <img class="border" src="images/home/us.jpg" alt="us">
+              <img alt="us" class="border" src="images/home/us.jpg">
             </div>
           </div>
         </div>
@@ -349,10 +352,10 @@
         <div class="follow-us">
           <div>Follow us for daily doses of feline charm!</div>
           <div class="social-media">
-            <a href="#" title="Yanyan Cafe - Facebook"><img src="images/social-media/facebook.svg" alt="facebook"></a>
-            <a href="#" title="Yanyan Cafe - Instagram"> <img src="images/social-media/instagram.svg"
-                                                              alt="instagram"></a>
-            <a href="#" title="Yanyan Cafe - Youtube"> <img src="images/social-media/youtube.svg" alt="youtube"></a>
+            <a href="#" title="Yanyan Cafe - Facebook"><img alt="facebook" src="images/social-media/facebook.svg"></a>
+            <a href="#" title="Yanyan Cafe - Instagram"> <img alt="instagram"
+                                                              src="images/social-media/instagram.svg"></a>
+            <a href="#" title="Yanyan Cafe - Youtube"> <img alt="youtube" src="images/social-media/youtube.svg"></a>
           </div>
         </div>
         <div class="copyright">Copyright &copy;2023 - Night Fae Studio</div>
