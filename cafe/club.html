@@ -70,9 +70,8 @@
       }
 
       /*show the ul and expand the div when hover*/
-      .club-intro ul {
+      .club-intro .intro-content {
         opacity: 0;
-        display: none;
       }
 
       /*make the background moving*/
@@ -88,9 +87,9 @@
         }
       }
 
-      .club-intro:hover ul {
+      /*show when hover*/
+      .club-intro:hover .intro-content {
         opacity: 1;
-        display: block;
       }
 
       /*form layout*/
@@ -189,6 +188,23 @@
       }
 
     </style>
+
+    <!--
+* ┌─────────────────────────────────────────────────────────────┐
+* │┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐│
+* ││Esc│!1 │@2 │#3 │$4 │%5 │^6 │&7 │*8 │(9 │)0 │_- │+= │|\ │`~ ││
+* │├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┤│
+* ││ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{[ │}] │ BS  ││
+* │├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤│
+* ││ Ctrl │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│" '│ Enter  ││
+* │├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────┬───┤│
+* ││ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│Shift │Fn ││
+* │└─────┬──┴┬──┴──┬┴───┴───┴───┴───┴───┴──┬┴───┴┬──┴┬─────┴───┘│
+* │      │Fn │ Alt │         Space         │ Alt │Win│          │
+* │      └───┴─────┴───────────────────────┴─────┴───┘          │
+* └─────────────────────────────────────────────────────────────┘
+*
+-->
   </head>
   <body>
     <div class="wrapper">
@@ -212,20 +228,23 @@
           <p>Moonlit paws gather, a tapestry of fur and friendship. Join the clan of cat-kissed souls, weave stories by
             flickering candlelight, and celebrate the magic of nine lives lived in harmony.</p>
         </div>
-
+        <!--club register card-->
         <div class="page club">
+          <!--benefit card-->
           <div class="card club-intro transition">
             <div class="intro-header transition"></div>
             <div class="intro-text">
               <h2>Club Benefit</h2>
-              <div class="transition">Exclusive perks and a purr-fect community experience:</div>
-              <ul class="transition" style="margin: 1rem">
+              <div class="transition intro-content">Exclusive perks and a purr-fect community experience:</div>
+              <ul class="transition intro-content" style="margin: 1rem">
                 <li>Early access to cat-themed events</li>
                 <li>Discounts on treats and merchandise</li>
                 <li>Regular updates on our adorable cats</li>
               </ul>
             </div>
           </div>
+
+          <!--register card-->
           <div class="card club-reg" id="reg">
             <form action="http://scott-media.com/test/form_display.php" class="card-form" method="post">
               <h2 class="action">Get Your Membership</h2>
@@ -255,10 +274,8 @@
               </div>
             </form>
           </div>
-
         </div>
       </main>
-
       <footer>
         <div class="follow-us">
           <div>Follow us for daily doses of feline charm!</div>
@@ -284,9 +301,6 @@
           </div>
         </div>
       </footer>
-
-
     </div>
-
   </body>
 </html>
