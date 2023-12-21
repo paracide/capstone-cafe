@@ -1,5 +1,3 @@
-
-
 /*
 * ┌─────────────────────────────────────────────────────────────┐
 * │┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐│
@@ -36,12 +34,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% auto;
-    background-clip: text;/*make the background painted */
+    background-clip: text; /*make the background painted */
     color: #fff;
     -webkit-animation: text-clip 4s linear infinite;
     animation: text-clip 4s linear infinite;
 }
-
 
 
 /*remove the interruption of margin*/
@@ -164,16 +161,6 @@ nav #menu-top {
     border-radius: 50%;
 }
 
-/*the nav expand when hover*/
-nav:hover {
-    width: 300px;
-}
-
-/*the second-menu show when hover*/
-nav:hover .second-menu {
-    opacity: 1;
-    display: block;
-}
 
 /*all the layout is grid*/
 main {
@@ -279,4 +266,18 @@ footer .copyright {
     display: -ms-grid;
     display: grid;
     place-items: center;
+}
+
+/*make the anime just work for desktop*/
+@media screen and (min-width: 768px) {
+    /*the nav expand when hover*/
+    nav:hover {
+        width: 300px;
+    }
+
+    /*the second-menu show when hover*/
+    nav:hover .second-menu {
+        opacity: 1;
+        display: block;
+    }
 }

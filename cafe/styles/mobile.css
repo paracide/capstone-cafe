@@ -22,8 +22,8 @@
 
     /*make the nav smaller*/
     nav {
+        width: 100vw;
         bottom: 0;
-        width: 100%;
         border-radius: 0;
         grid-template-columns: repeat(5, 1fr);
     }
