@@ -22,26 +22,25 @@
 
     /*make the nav smaller*/
     nav {
-        width: 100px;
-        grid-template-columns: 1fr;
+        bottom: 0;
+        width: 100%;
+        border-radius: 0;
+        grid-template-columns: repeat(5, 1fr);
     }
 
     /*hidden home menu when mobile*/
     nav .home-menu {
-        opacity: 0;
-        display: none;
-    }
-
-    /*show the entire nav when hover*/
-    nav:hover {
-        height: 40vh;
-        width: 90vw;
-        border-radius: 10px;
-    }
-
-    nav:hover .second-menu, nav:hover .home-menu {
         opacity: 1;
         display: block;
+    }
+
+    nav .second-menu {
+        opacity: 1;
+        display: block;
+    }
+
+    nav .menu-shape {
+        display: none;
     }
 
     /*footer need higher to put info*/
