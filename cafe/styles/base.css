@@ -77,6 +77,7 @@ h2, h3, h4, h5, p {
 a {
     text-decoration: none;
     color: black;
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     /*change the color*/
 }
@@ -203,7 +204,7 @@ footer .copyright {
 
 /*default border*/
 .border {
-    border: 0.5px double white;
+    border: 1px double white;
     border-radius: 10px;
 }
 
@@ -214,6 +215,7 @@ footer .copyright {
 
 /*default transition*/
 .transition {
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -222,13 +224,14 @@ footer .copyright {
     height: 2.25rem;
     width: 5rem;
     color: white;
-    border: 1.5px solid white;
+    border: 2px solid white;
     text-decoration: none;
     display: -ms-grid;
     display: grid;
     place-items: center;
     border-radius: 10px;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -250,6 +253,7 @@ footer .copyright {
     width: 0;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
     z-index: -1;
 }
