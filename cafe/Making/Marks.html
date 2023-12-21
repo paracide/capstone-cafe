@@ -21,16 +21,56 @@
     <link href="../styles/mobile.css" rel="stylesheet">
 
     <style>
+      /*
+* ┌─────────────────────────────────────────────────────────────┐
+* │┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐│
+* ││Esc│!1 │@2 │#3 │$4 │%5 │^6 │&7 │*8 │(9 │)0 │_- │+= │|\ │`~ ││
+* │├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┤│
+* ││ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{[ │}] │ BS  ││
+* │├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤│
+* ││ Ctrl │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│" '│ Enter  ││
+* │├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────┬───┤│
+* ││ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│Shift │Fn ││
+* │└─────┬──┴┬──┴──┬┴───┴───┴───┴───┴───┴──┬┴───┴┬──┴┬─────┴───┘│
+* │      │Fn │ Alt │         Space         │ Alt │Win│          │
+* │      └───┴─────┴───────────────────────┴─────┴───┘          │
+* └─────────────────────────────────────────────────────────────┘
+*/
+      h1 {
+        font-size: 10rem;
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+
       table {
-        background: white;
-        width: 60vw;
-        height: 50vh;
         border-radius: 10px;
-        padding: 2rem;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(45deg, #ead7b1, #c8a882);
+        border-collapse: separate;
+        border-spacing: 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      table th,
+      table td {
+        color: black;
+        border: 1px solid #fff;
+        padding: 5px;
+        text-align: center;
       }
 
       table a {
-        color: orangered;
+        color: #7b3e03;
+      }
+
+
+      /*let user know the hovering line of table*/
+      table tr:hover {
+        background-color: rgba(255, 255, 255, 0.3);
       }
     </style>
 
@@ -52,8 +92,8 @@
       </nav>
 
       <main>
-        <div class="page intro-page">
-          <h1>Marks</h1>
+        <div class="intro-page">
+          <h1 class="text-gradient-anime">Marks</h1>
         </div>
         <div class="page" id="marks">
           <div class="marks-wrapper">

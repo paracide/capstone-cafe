@@ -112,8 +112,8 @@
         background-color: white;
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 1fr 5vw 1fr;
-        grid-template-columns: 1fr 1fr;
+        -ms-grid-columns: 1fr 5vw 2fr;
+        grid-template-columns: 1fr 2fr;
         -ms-grid-rows: 1fr 5vw 1fr;
         grid-template-rows: 1fr 1fr;
         grid-gap: 5vw;
@@ -155,26 +155,20 @@
       .find-us-wrapper table {
         border-radius: 10px;
         height: 100%;
-        overflow-x: auto; /* make table responsible*/
-        display: block;
-        background: linear-gradient(45deg, #ead7b1, #c8a882);
-        border-collapse: collapse;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      }
-
-      .find-us-wrapper table thead {
         width: 100%;
+        background: linear-gradient(45deg, #ead7b1, #c8a882);
+        border-collapse: separate;
+        border-spacing: 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
       }
 
       .find-us-wrapper table th,
       .find-us-wrapper table td {
-        padding: 0.5rem;
         color: black;
-      }
-
-      .find-us-wrapper table th {
-        background-color: #9E9E9E;
-        text-align: left;
+        border: 1px solid #fff;
+        padding: 5px;
+        text-align: center;
       }
 
       /*let user know the hovering line of table*/
@@ -314,7 +308,6 @@
                   <td>11:00 AM - 7:00 PM</td>
                   <td>8:00 PM - 10:00 PM</td>
                 </tr>
-
                 <tr>
                   <td>Sat</td>
                   <td>11:00 AM - 8:00 PM</td>
@@ -328,6 +321,7 @@
                   <td>6:00 PM - 8:00 PM</td>
                 </tr>
               </tbody>
+
             </table>
           </div>
         </div>
