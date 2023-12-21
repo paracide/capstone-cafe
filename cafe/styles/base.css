@@ -109,6 +109,12 @@ header #logo {
     color: white;
 }
 
+.intro-page p {
+    width: 100%;
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
 .wrapper {
     display: -ms-grid;
     display: grid;
